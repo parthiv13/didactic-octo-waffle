@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./main.css">
+    <title>Login/Signup</title>
+</head>
+<body>
+    <div class="body">
+        <div class="register" id="register">
+            <div class="register__toggle">
+                <div class="register__toggle__text">
+                    <div class="title">Welcome Back!</div>
+                    <div class="register__toggle__subtitle">
+                        To keep connected with us please login with your personal info
+                    </div>
+                </div>
+                <div class="register__toggle__button">
+                    <button class="btn .btn-green" onclick="toggleLogin()">SIGN IN</button>
+                </div>
+            </div>
+            <div class="register__form">
+                <div class="form">
+                    <div class="form__title">
+                        Create Account
+                    </div>
+                    <div class="form__body">
+                        <input type="text" class="text__name" placeholder="Name">
+                        <input type="text" class="text__email" placeholder="Email">
+                        <input type="password" class="text__password" placeholder="Password">
+                    </div>
+                    <div class="form__submit">
+                        <button class="btn">SIGN UP</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="login" id="login">
+            <div class="login__form">
+                <div class="form">
+                    <div class="form__title">
+                        Sign IN
+                    </div>
+                    <div class="form__body">
+                        <input type="text" class="text__email" placeholder="Email">
+                        <input type="text" class="text__password" placeholder="Password">
+                    </div>
+                    <div class="form__submit">
+                        <button class="btn">SIGN IN</button>
+                    </div>
+                </div>
+            </div>
+            <div class="login__toggle">
+                <div class="login__toggle--text">
+                    <div class="title">Hello, Friend!</div>
+                    <div class="subtitle">Enter your personal details and start your journey with us</div>
+                </div>
+                <div class="login__toggle--button">
+                    <button class="btn" onclick="toggleRegister()">SIGN UP</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
